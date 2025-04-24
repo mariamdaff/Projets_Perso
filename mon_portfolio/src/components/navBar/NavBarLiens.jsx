@@ -15,7 +15,7 @@ return (
             className="btn-nav hover:text-gray-400 transition"
             onClick={onLinkClick}
             >
-             View CV
+             Voir CV
         </a></li>
         
       <li><a href="https://www.linkedin.com/in/mariama-daff" 
@@ -35,7 +35,7 @@ return (
   className="cursor-pointer hover:text-gray-400 transition"
   onClick={onLinkClick}
 >
-  About
+  A-propos
 </Link>
 
 <Link
@@ -46,7 +46,7 @@ return (
   className="cursor-pointer hover:text-gray-400 transition"
   onClick={onLinkClick}
 >
-  Skills
+  Compétences
 </Link>
 
         <Link
@@ -57,7 +57,7 @@ return (
   className="cursor-pointer hover:text-gray-400 transition"
   onClick={onLinkClick}
 >
-  Projects
+  Projets
 </Link>
 
 <Link

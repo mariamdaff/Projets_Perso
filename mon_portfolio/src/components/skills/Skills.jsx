@@ -6,8 +6,8 @@ import { SiLaravel } from 'react-icons/si';
 
 const Skills = () => {
   return (
-    <section className="py-10 bg-black text-white text-center ">
-      <h2 className="text-3xl font-bold mb-6">Technologies</h2>
+    <section className="py-12 bg-black text-white text-center ">
+      <h2 className="text-3xl font-bold mb-6">Compétences</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
   <li className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition">
     <DiHtml5 className="text-6xl text-orange-500 mb-2" />

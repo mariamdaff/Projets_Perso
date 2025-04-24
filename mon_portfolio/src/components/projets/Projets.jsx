@@ -52,12 +52,13 @@ const Projets = () => {
 
   return (
     <section className="py-12 px-4 bg-black text-white m-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <h2 className="text-3xl font-bold mb-8 text-center">Mes Projets</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {projets.map((projet) => (
           <div
             key={projet.id}
-            className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+            className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-110  hover:shadow-2xl"
+
           >
             <img
               src={projet.image}
