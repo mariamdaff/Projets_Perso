@@ -36,10 +36,10 @@ const Projets = () => {
     },
     {
       id: 5,
-      titre: 'Mobile',
-      description: 'App mobile.',
+      titre: 'Mobile-front',
+      description: 'App mobile front-end responsive.',
       image: '/assets/img/mobile-front.png',
-      link: 'https://github.com/Evan69007/Mobile'
+      link: 'https://github.com/Evan69007/mobile-front'
     },
     {
       id: 6,

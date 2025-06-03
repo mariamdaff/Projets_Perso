@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mariamdaff.github.io/Projets_Perso/index.html",
+  "homepage": "https://mariamdaff.github.io/mon_portfolio",
 
   "name": "mon_portfolio",
   "private": true,
@@ -9,9 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.0.0",
