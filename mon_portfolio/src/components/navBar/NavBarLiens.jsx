@@ -8,15 +8,17 @@ import { Link } from 'react-scroll';
 const LiensDeNavigation = ({ onLinkClick }) =>{
 return (
     <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
-      <li> <a
-            href="/monCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-nav hover:text-gray-400 transition"
-            onClick={onLinkClick}
-            >
-             Voir CV
-        </a></li>
+      <li>
+  <a
+    href={`${import.meta.env.BASE_URL}monCV.pdf`}
+    download
+    className="btn-nav hover:text-gray-400 transition"
+    onClick={onLinkClick}
+  >
+    Voir CV
+  </a>
+</li>
+
         
       <li><a href="https://www.linkedin.com/in/mariama-daff" 
             target="_blank"
