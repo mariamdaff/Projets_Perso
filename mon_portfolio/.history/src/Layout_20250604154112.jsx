@@ -6,21 +6,16 @@ import APropos from './components/A_Propos/APropos';
 import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
 import Accueil from './components/accueil/Accueil';
-import AProposImage from './components/A_Propos/AProposImage';
 import { Element } from 'react-scroll';
 
 const Layout = () => {
   return (
-    <div className="bg-black min-h-screen min-w-screen text-white scroll-smooth">
+    <div className="bg-black min-h-screen text-white scroll-smooth">
       <NavbarElement />
+      <main className="p-10 space-y-16">
       <Element name="accueil">
           <Accueil />
-      </Element>
-      <main className="p-0 space-y-2">
-      {/* <Element name="A_Propos">
-          <AProposImage />
-        </Element> */}
-      
+        </Element>
       <Element name="A_Propos">
           <APropos />
         </Element>
@@ -36,7 +31,6 @@ const Layout = () => {
         
       </main>
       <Footer />
-      
     </div>
   );
 };

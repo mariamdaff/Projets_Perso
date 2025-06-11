@@ -54,13 +54,13 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="bg-teal-600 hover:bg-teal-500 px-6 py-2 rounded w-full transition"
-          >
+            className="bg-[#cea553] hover:bg-[#F5C76D] px-6 py-2 rounded w-full transition"
+          > 
             Envoyer
           </button>
         </form>
       ) : (
-        <div className="bg-teal-800 p-6 rounded shadow-md">
+        <div className="bg-[#F5C76D] p-6 rounded shadow-md">
           <h3 className="text-xl font-semibold mb-2">Merci pour votre message !</h3>
           <p>Je vous répondrai bientôt.</p>
         </div>

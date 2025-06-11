@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import LiensDeNavigation from './NavBarLiens.jsx';
-import Description from './NavBarDescriptionPost.jsx';
-import MonNom from './NavBarNom.jsx';
+import Logo from './NavBarLogo.jsx';
 
 const NavbarElement = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,9 +10,8 @@ const NavbarElement = () => {
       <nav className="text-gray-200 px-8 py-4 flex flex-col sm:flex-row sm:justify-between items-center">
         
         {/* Partie Nom + Description */}
-        <div className="flex flex-col items-center text-center mb-4 sm:mb-0">
-          <MonNom />
-          <Description />
+        <div className="flex flex-col items-center text-center mb-1 sm:mb-0">
+          <Logo />
         </div>
 
         {/* Menu burger bouton (visible uniquement sur mobile) */}
