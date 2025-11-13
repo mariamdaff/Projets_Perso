@@ -7,10 +7,11 @@ import { Link } from 'react-scroll';
 
 const LiensDeNavigation = ({ onLinkClick }) =>{
 return (
-    <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
+  <ul className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-start sm:items-center">
+
       <li>
   <a
-    href={`${import.meta.env.BASE_URL}monCV.pdf`}
+    href={`${import.meta.env.BASE_URL}CV_MariamDaff_2025_Alternance.pdf`}
     download
     className="btn-nav hover:text-gray-400 transition"
     onClick={onLinkClick}

@@ -7,17 +7,17 @@ const NavbarElement = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-gray-800 shadow-md">
-      <nav className="text-gray-200 px-8 py-4 flex flex-col sm:flex-row sm:justify-between items-center">
+      <nav className="text-gray-200 px-6 py-4 flex justify-between items-center">
         
-        {/* Partie Nom + Description */}
-        <div className="flex flex-col items-center text-center mb-1 sm:mb-0">
+        {/* Logo */}
+        <div className="flex items-center">
           <Logo />
         </div>
 
-        {/* Menu burger bouton (visible uniquement sur mobile) */}
+        {/* Menu burger (mobile uniquement) */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="sm:hidden absolute top-4 right-6"
+          className="sm:hidden"
           aria-label="Ouvrir le menu"
         >
           <svg
@@ -34,12 +34,16 @@ const NavbarElement = () => {
             />
           </svg>
         </button>
-        
 
         {/* Liens de navigation */}
-        <div className={`${menuOpen ? 'block' : 'hidden'} sm:block`}>
-        <LiensDeNavigation onLinkClick={() => setMenuOpen(false)} />
-          {/* <LiensDeNavigation /> */}
+        <div
+          className={`
+            ${menuOpen ? 'block' : 'hidden'}
+            sm:flex sm:items-center sm:space-x-6
+            absolute sm:static top-full left-0 w-full sm:w-auto bg-gray-800 sm:bg-transparent px-6 sm:px-0 pb-4 sm:pb-0
+          `}
+        >
+          <LiensDeNavigation onLinkClick={() => setMenuOpen(false)} />
         </div>
       </nav>
     </header>

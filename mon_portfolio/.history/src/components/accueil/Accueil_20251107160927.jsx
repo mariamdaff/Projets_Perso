@@ -4,17 +4,18 @@ import bgImage from '../../assets/img/backgroundImage.jpg';
 const Accueil = () => {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat relative text-white flex items-center"
+      className="min-h-screen bg-cover bg-center bg-no-repeat relative text-white flex items-center justify-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Bloc texte */}
       <div
         className="
-          px-6
-          sm:px-10
-          md:px-20
+          text-center
+          px-4
+          sm:px-6
+          md:px-8
           max-w-[90%]
-          md:max-w-[50%]
+          md:max-w-[60%]
           animate-fadeInUp
         "
       >
